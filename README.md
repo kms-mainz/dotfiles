@@ -8,6 +8,7 @@
 
 # shotcuts
 ````
+super + x #lock screen
 super + return #open kitty
 
 super + space #open rofi
