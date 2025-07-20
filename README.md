@@ -17,8 +17,8 @@ super + e #open dolphin
 ````
 
 # comment
-<h2>if you have something error or have comment, feel free! even my setup i based on somehing other's dotfiles
-and this is the source of fasfetch config, i changed something to the fastfetch show the image </h2>
+<divif you have something error or have comment, feel free! even my setup i based on somehing other's dotfiles
+and this is the source of fasfetch config, i changed something to the fastfetch show the image </div>
 
 # Installing
 
