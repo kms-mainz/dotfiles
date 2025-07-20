@@ -24,10 +24,10 @@ and this is the source of fasfetch config, i changed something to the fastfetch 
 <div> warning: the install.sh still in beta, don't use it </div>
 
 # some links about the source
-[polybar](https://github.com/polybar/polybar)
-[betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
-[source of fastfetch](https://github.com/Meow0x7E/config-fastfetch)
-[picom](https://github.com/yshui/picom)
+- [polybar](https://github.com/polybar/polybar)
+- [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
+- [source of fastfetch](https://github.com/Meow0x7E/config-fastfetch)
+- [picom](https://github.com/yshui/picom)
 
 
 # preview
