@@ -48,3 +48,19 @@ else
 fi
 
 echo "[✔] Setup completed successfully!"
+
+echo "moving config files of bspwm..."
+mv $HOME/Dotfiles/bspwm $HOME/.config/
+echo "moving config files of sxhkd..."
+mv $HOME/Dotfiles/sxhkd $HOME/.config/
+echo "moving config files of polybar..."
+mv $HOME/Dotfiles/polybar $HOME/.config/
+echo "moving config files of rofi..."
+mv $HOME/Dotfiles/rofi $HOME/.config/
+echo "moving config files of picom..."
+mv $HOME/Dotfiles/picom $HOME/.config/
+
+fastfetch --gen-config
+mv $HOME/.config/fastfetch $HOME/fastfetch.bak && mv $HOME/Dotfiles/fastfetch $HOME/.config
+echo "config neofetch: "
+
