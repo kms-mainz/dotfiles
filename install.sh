@@ -38,7 +38,7 @@ done
 echo "[*] Detecting package manager..."
 if command -v pacman &> /dev/null; then
     echo "[+] Arch-based system detected. Installing packages..."
-    sudo pacman -S --needed bspwm sxhkd polybar rofi picom dunst kitty
+    sudo pacman -S --needed bspwm sxhkd polybar rofi picom dunst kitty betterlockscreen
 elif command -v apt &> /dev/null; then
     echo "[+] Debian-based system detected. Installing packages..."
     sudo apt update
