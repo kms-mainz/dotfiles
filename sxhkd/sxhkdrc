@@ -126,3 +126,8 @@ super + e
 
 super + space
 	rofi -show drun -show-icons -icon-theme "JetBrainsMonoNF-Regular"
+
+# lockscreen
+super + x
+#alt + shift + x
+    betterlockscreen -l --blur
