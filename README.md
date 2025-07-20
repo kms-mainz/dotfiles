@@ -1,6 +1,6 @@
 # dotfiles
 <div>this is my setup for bspwm</div>
-  <div>Polybar, link in here https://github.com/polybar/polybar, with cappucino theme</div>
+  <div>Polybar, link in [here](https://github.com/polybar/polybar), with cappucino theme</div>
     <div>nitrogen</div>
 <div>picom</div>
 
