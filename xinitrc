@@ -1,3 +1,4 @@
+#rename this to .xinitrc!
 #!/bin/sh
 
 prefix="/usr"
