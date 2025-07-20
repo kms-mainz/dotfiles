@@ -20,9 +20,9 @@ and this is the source of fasfetch config, i changed something to the fastfetch 
 # Installing
 <h2> warning: the install.sh still in beta, don't use it </h2>
 
-<div>`git clone https://github.com/noneisreal/dotfiles ~/dotfiles && cd ~/dotfiles` </div>
-<div>`chmod +x install_bspwm_dotfiles.sh`</div>
-<div>`./install_bspwm_dotfiles.sh`</div>
+<div>`git clone https://github.com/noneisreal/dotfiles ~/dotfiles && cd ~/dotfiles`
+        `chmod +x install_bspwm_dotfiles.sh`
+          `./install_bspwm_dotfiles.sh`</div>
 
 # preview
 ![this is a screenshot, the wallpaper in folder images](Screenshot_20250709_183111.png)
