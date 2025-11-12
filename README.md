@@ -32,4 +32,5 @@ and this is the source of fasfetch config, i changed something to the fastfetch 
 
 
 # preview
-![this is a screenshot, the wallpaper in folder images](Screenshot_20250709_183111.png)
+![this is a screenshot, the wallpaper in folder images](Screenshot_20250713_090227.png)
+
