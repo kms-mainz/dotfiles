@@ -7,9 +7,10 @@
     // "source": "~/.config/fastfetch/images/stalingrad.png",
     // "source": "~/.config/fastfetch/images/ussr.png",
     // "source": "~/.config/fastfetch/images/girl.png",
-    // "source": "~/.config/fastfetch/images/800px-StG44_costume2.png",
-    "source": "~/.config/fastfetch/images/'Konachan.com - 287221 animal bird blonde_hair blue_eyes bow clouds dress flowers ingmuqianyi lexington long_hair petals sky summer_dress sunflower wristwear zhanjian_shaonu.png'",
-
+    // "source": "~/.config/fastfetch/images/StG44.png",
+    // "source": "~/.config/fastfetch/images/'Konachan.com.png'",
+    // "source": "~/.config/fastfetch/images/yande.re.png",
+    "source": "~/.config/fastfetch/images/131504870_p0.jpg",
     /* ######################ASCII############################*/
     // "source": "~/.config/fastfetch/ascii/stg.txt",
     // "source": "~/.config/fastfetch/ascii/messer.txt",
@@ -25,7 +26,6 @@
       "left": 2
     }
   },
-
   "display": {
     // "separator": " ➜ ",
     "separator": ": ",

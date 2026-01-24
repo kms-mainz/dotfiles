@@ -65,8 +65,6 @@
     "Processes",
     "Swap",
     "Separator",
-    "LocalIp",
-    "PublicIp",
     "Wifi",
     "DNS",
     "Separator",
