@@ -8,7 +8,7 @@ This is my setup for bspwm
 - Betterlockscreen
 
 # Shotcuts
-[!TIP]
+>[!TIP]
 > `super + x`       # lock screen
 > `super + return`  # open kitty
 > `super + space`   # open rofi
