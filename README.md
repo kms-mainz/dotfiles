@@ -9,16 +9,16 @@ This is my setup for bspwm
 
 # Shotcuts
 >[!TIP]
-> `super + x`       # lock screen
-> `super + return`  # open kitty
-> `super + space`   # open rofi
-> `super + e`       # open dolphin
+> - `super + x`       # lock screen
+> - `super + return`  # open kitty
+> - `super + space`   # open rofi
+> - `super + e`       # open dolphin
 
 # Comment
 - If you have something error or have comment, feel free! even my setup i based on other's dotfiles. 
 
 # Installing
-[!WARNING]
+>[!WARNING]
 > The install.sh still in beta, don't use it
 
 # Some links about the source
