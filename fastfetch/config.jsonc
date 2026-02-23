@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  // "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     /* #######################IMAGES###########################*/
     // "source": "~/.config/fastfetch/images/133604892_p0.png",
@@ -10,21 +10,23 @@
     // "source": "~/.config/fastfetch/images/StG44.png",
     // "source": "~/.config/fastfetch/images/'Konachan.com.png'",
     // "source": "~/.config/fastfetch/images/yande.re.png",
-    "source": "~/.config/fastfetch/images/131504870_p0.jpg",
+    // "source": "~/.config/fastfetch/images/131504870_p0.jpg",
+    "source": "~/.config/fastfetch/images/jie.png",
     /* ######################ASCII############################*/
     // "source": "~/.config/fastfetch/ascii/stg.txt",
     // "source": "~/.config/fastfetch/ascii/messer.txt",
     // "source": "~/.config/fastfetch/ascii/ascii.txt", //HIDEN
+    // "source": "~/.config/fastfetch/ascii/jie.txt",
     
     /* ###################SETTING LOGO##############*/
-    "color": {"1": "cyan", "2": "black"},
-    // "type": "kitty",
+    "color": {"1": "cyan", "2": ""},
     "height": 20,
-    "padding": {
-      "top": 0,
-      "right": 4,
-      "left": 2
-    }
+    // "type": "auto",
+    // "padding": {
+    //   "top": 0,
+    //   "right": 4,
+    //   "left": 2
+    // }
   },
   "display": {
     // "separator": " ➜ ",
@@ -150,15 +152,15 @@
     {
       "type": "cpu",
       "key": "CPU",
-      "temp": true
+      "temp": true,
+      "showPeCoreCount": true
     },
     {
       "type": "cpuusage",
       "key": "CPU Usage"
     },
     {
-      "type": "cpucache",
-      "key": "CPU Cache"
+      "type": "cpucache"
     },
     {
       "type": "gpu",
@@ -183,15 +185,16 @@
     },
     {
       "type": "swap",
-      "key": "Swap"
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      },
+      "keyIcon": "󰓡",
+      "separate": true
     },
     {
       "type": "physicaldisk"
-    },
-    {
-      "type": "physicaldisk",
-      "key": "Physical Disk",
-      "keyIcon": ""
     },
     {
       "type": "disk",
