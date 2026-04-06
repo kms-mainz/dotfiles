@@ -45,22 +45,23 @@ elif command -v apt &> /dev/null; then
     sudo apt install -y bspwm sxhkd polybar rofi picom dunst kitty
 else
     echo "[!] Unknown package manager. Please install these manually: bspwm sxhkd polybar rofi picom dunst kitty"
+    exit 0
 fi
 
 echo "[✔] Setup completed successfully!"
 
 echo "moving config files of bspwm..."
-mv $HOME/Dotfiles/bspwm $HOME/.config/
+mv $HOME/dotfiles/bspwm $HOME/.config/
 echo "moving config files of sxhkd..."
-mv $HOME/Dotfiles/sxhkd $HOME/.config/
+mv $HOME/dotfiles/sxhkd $HOME/.config/
 echo "moving config files of polybar..."
-mv $HOME/Dotfiles/polybar $HOME/.config/
+mv $HOME/dotfiles/polybar $HOME/.config/
 echo "moving config files of rofi..."
-mv $HOME/Dotfiles/rofi $HOME/.config/
+mv $HOME/dotfiles/rofi $HOME/.config/
 echo "moving config files of picom..."
-mv $HOME/Dotfiles/picom $HOME/.config/
+mv $HOME/dotfiles/picom $HOME/.config/
 
 fastfetch --gen-config
-mv $HOME/.config/fastfetch $HOME/fastfetch.bak && mv $HOME/Dotfiles/fastfetch $HOME/.config
+mv $HOME/.config/fastfetch $HOME/fastfetch.bak && mv $HOME/dotfiles/fastfetch $HOME/.config
 echo "config neofetch: "
 
