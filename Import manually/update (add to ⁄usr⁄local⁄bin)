@@ -24,7 +24,7 @@ WHITE='\033[1;37m'
 # pacman
 # ------------
 echo -e ${GREEN}'################## Update system by pacman... ##################'
-    sudo pacman -Syu --noconfirm    || {
+    sudo pacman -Syu --noconfirm                || {
         echo -e ${RED}'################# Update system has failed, skip now... ######################'
     }
 # ------------
@@ -32,11 +32,11 @@ echo -e ${GREEN}'################## Update system by pacman... #################
 # ------------
 echo -e ${GREEN}'################### Update system by yay... ####################'
 if command -v yay >/dev/null 2>&1; then
-	yay -Syu --noconfirm            || {
+	yay -Syu --noconfirm                        || {
 		echo -e ${RED}'################# yay command is failed, skipping... ###############'
 	}
 elif command -v paru >/dev/null 2>&1; then
-	paru -Syu --noconfirm           || {
+	paru -Syu --noconfirm                       || {
 		echo -e ${RED}'############### paru command is failed, skipping... ################'
 	}
 else
@@ -48,11 +48,11 @@ fi
 # flatpak
 # ------------
 echo -e ${GREEN}'################### Update system by flatpak...###################'
-	flatpak update --user -y  || {
+	flatpak update --user -y                    || {
         	echo -e ${RED} '############### flatpak command not found, skipping... #################'
     	}
     	echo -e ${GREEN} "################### update system-wide app ###################"
-    	flatpak update --system -y       || {
+    	flatpak update --system -y              || {
         	echo -e ${RED} '############### flatpak command not found, skipping... #################'
     	}
 
@@ -63,20 +63,20 @@ clear
 # clear cache
 # ------------
 echo -e ${GREEN}'################ Clear cache ######################'
-    sudo pacman -Scc --noconfirm    || {
+    sudo pacman -Scc --noconfirm                || {
         echo -e ${RED} '################# Skipping... ######################'
     }
 
 if command -v yay >/dev/null 2>&1; then
-    yay -Scc --noconfirm            || {
+    yay -Scc --noconfirm                        || {
         echo -e ${RED} '################# Skipping... ######################'
     }
 elif command -v paru >/dev/null 2>&1; then
-    paru -Scc --noconfirm           || {
+    paru -Scc --noconfirm                       || {
         echo -e ${RED} '################# Skipping... ######################'
     }
 elif command -v flatpak >/dev/null 2>&1; then 
-    flatpak uninstall --user --unused -y   || {
+    flatpak uninstall --user --unused -y        || {
         echo -e ${RED} '################# Skipping... ######################' 
     }
 else
