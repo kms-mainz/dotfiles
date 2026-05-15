@@ -1,0 +1,274 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+    "logo": {
+      // ----------------------- 
+      //          IMAGES 
+      // -----------------------
+
+      // "source": "~/.config/fastfetch/images/131504870_p0.jpg",
+      // "source": "~/.config/fastfetch/images/133604892_p0.png",    
+      // "source": "~/.config/fastfetch/images/jie.png",
+      "source": "~/.config/fastfetch/images/Konachan.com.png",
+      // "source": "~/.config/fastfetch/images/stalingrad.png",
+      // "source": "~/.config/fastfetch/images/StG44.png",
+      // "source": "~/.config/fastfetch/images/yande.re.png",
+      
+      // ---------------------- 
+      //          ASCII 
+      // ----------------------
+    
+      // "source": "~/.config/fastfetch/ascii/ascii.txt", //HIDEN
+      // "source": "~/.config/fastfetch/ascii/jie.txt",
+      // "source": "~/.config/fastfetch/ascii/messer.txt",
+      // "source": "~/.config/fastfetch/ascii/stg.txt",
+      "height": 20,
+      "type": "auto",
+      "padding": {
+        "top": 0,
+        "right": 4,
+        "left": 2
+      }
+    },
+  "display": {
+    // "separator": " ➜ ",
+    "separator": ": ",
+    "color": {
+      "keys": "cyan",
+      "title": "blue",
+      "separator": "white"
+    },
+    "brightColor": true,
+    "size": {
+      "binaryPrefix": "iec",  // Use GiB, matching your example
+      "ndigits": 2  // Two decimal places for sizes (e.g., 476.94 GiB)
+    },
+    "percent": {
+      "ndigits": 0,  // Whole-number percentages (e.g., 43%)
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91"
+      }
+    }
+  },
+  "modules": [
+    // ----------------------
+    // Header Section
+    // ----------------------
+   
+   {
+      "type": "title"
+    },
+    "separator",
+    {
+      "type": "custom",
+      "key": "System Information"
+    },
+
+    // ----------------------
+    // System Information
+    // ----------------------
+   
+    {
+      "type": "os",
+      "key": "OS"
+    },
+    {
+      "type": "host",
+      "key": "Host"
+    },
+    {
+      "type": "kernel",
+      "key": "Kernel"
+    },
+    {
+      "type": "uptime",
+      "key": "Uptime"
+    },
+    {
+      "type": "packages",
+      "key": "Packages"
+    },
+    {
+      "type": "shell",
+      "key": "Shell"
+    },
+    {
+      "type": "processes",
+      "key": "Processes"
+    },
+    {
+      "type": "initSystem",
+      "key": "Init"
+    },
+    {
+      "type": "bootmgr",
+      "key": "Boot Manager"
+    },
+    "break",
+    {
+      "type": "custom",
+      "key": "Desktop Environment"
+    },
+    
+    // ----------------------
+    // Desktop Environment
+    // ----------------------
+   
+    {
+      "type": "display",
+      "key": "Display"
+    },
+    {
+      "type": "de",
+      "key": "DE"
+    },
+    {
+      "type": "wm",
+      "key": "WM"
+    },
+    {
+      "type": "wmtheme",
+      "key": "WM Theme"
+    },
+    {
+      "type": "theme",
+      "key": "Theme"
+    },
+    {
+      "type": "icons",
+      "key": "Icons"
+    },
+    {
+      "type": "font",
+      "key": "Font"
+    },
+    {
+      "type": "cursor",
+      "key": "Cursor"
+    },
+    {
+      "type": "terminal",
+      "key": "Terminal"
+    },
+    {
+      "type": "terminalfont",
+      "key": "Terminal Font"
+    },
+    "break",
+    {
+      "type": "custom",
+      "key": "Hardware"
+    },
+    // ----------------------
+    // Hardware
+    // ----------------------
+    {
+      "type": "cpu",
+      "key": "CPU",
+      "temp": true,
+      "showPeCoreCount": true
+    },
+    {
+      "type": "cpuusage",
+      "key": "CPU Usage"
+    },
+    {
+      "type": "cpucache"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU",
+      "temp": true
+    },
+    {
+      "type": "opengl",
+      "key": "OpenGL"
+    },
+    {
+      "type": "opencl",
+      "key": "OpenCL"
+    },
+    {
+      "type": "physicalmemory",
+      "key": "Physical Memory"
+    },
+    {
+      "type": "memory",
+      "key": "Memory"
+    },
+    {
+      "type": "swap",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      },
+      "keyIcon": "󰓡",
+      "separate": true
+    },
+    {
+      "type": "physicaldisk"
+    },
+    {
+      "type": "disk",
+      "keyIcon": "",
+      "showRegular": true,
+      "showExternal": true,
+      "showHidden": true,
+      "showSubvolumes": true,
+      "showReadOnly": true,
+      "showUnknown": true,
+      "folders": "",
+      "hideFolders": "/efi:/boot:/boot/efi:/boot/firmware",
+      "hideFS": "",
+      "useAvailable": true,
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      }
+    },
+    {
+      "type": "battery",
+      "key": "Battery"
+    },
+    {
+      "type": "poweradapter",
+      "key": "Power Adapter"
+    },
+    "break",
+    {
+      "type": "custom",
+      "key": "Media and Miscellaneous"
+    },
+    // ----------------------  
+    // Media and Miscellaneous
+    // ----------------------
+      
+    {
+      "type": "player",
+      "key": "Media Player"
+    },
+    {
+      "type": "media",
+      "key": "Media"
+    },
+    {
+      "type": "datetime",
+      "key": "Date & Time"
+    },
+    {
+      "type": "locale",
+      "key": "Locale"
+    },
+    "break",
+    // ----------------------
+    // Color Palette Footer
+    // ----------------------
+   {
+      "type": "colors"
+      // "symbol": "circle"
+    }
+  ]
+}
