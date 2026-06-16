@@ -32,35 +32,16 @@ set ttyfast                 " Speed up scrolling in Vim
 " Initialize vim-plug
 call plug#begin('~/.vim/plugged')
 
-" Syntax checker
 Plug 'dense-analysis/ale'
-
-" A file explorer (NERDTree)
 Plug 'preservim/nerdtree'
-
-" A status bar at the bottom
 Plug 'vim-airline/vim-airline'
-
-" Theme
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-
-" Plugin for commenting (allows us to use Ctrl+/)
 Plug 'tpope/vim-commentary'
-
-" Snippet Engine (UltiSnips is the best for C++, Py, Bash, Qt)
 Plug 'SirVer/ultisnips'
-
-" The actual snippets library (supports basically every language)
 Plug 'honza/vim-snippets'
-
-" --> THE NEW ONES <--
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
-
-" Formatter
 Plug 'sbdchd/neoformat'
-
-" Visual Debugger (VSCode clone)
 Plug 'puremourning/vimspector'
 
 call plug#end()
@@ -82,11 +63,9 @@ colorscheme material
 " Press Ctrl+n to open the file explorer
 map <C-n> :NERDTreeToggle<CR>
 " --- Ctrl + ` : Open Terminal at the bottom ---
-" (Note: some terminals don't read the backtick well. If it fails, map it to <F4>)
 nnoremap <C-`> :bo term<CR>
 
 " --- Ctrl + / : Comment / Uncomment ---
-" Terminals read Ctrl+/ as Ctrl+_
 nnoremap <C-_> gc
 vnoremap <C-_> gc
 " --- Ctrl + A : Select All ---
@@ -111,8 +90,6 @@ nnoremap <C-y> <C-r>
 inoremap <C-y> <C-o><C-r>
 vnoremap <C-y> <C-c><C-r>
 
-" --- Alt + Up/Down : Move lines like VSCode ---
-
 " Normal mode (moves current line)
 nnoremap <A-Up> :m .-2<CR>==
 nnoremap <A-Down> :m .+1<CR>==
@@ -129,17 +106,11 @@ nnoremap <C-w> :tabclose<CR>
 " ==========================================
 " --- FORMATTER KEYBIND ---
 " ==========================================
-
-" Press F3 to auto-format the current file
 nnoremap <F3> :Neoformat<CR>
-
 " ==========================================
 " --- SNIPPET SETTINGS ---
 " ==========================================
-
-" Use Tab to expand a snippet (like VSCode)
 let g:UltiSnipsExpandTrigger = "<tab>"
-" Use Ctrl+j and Ctrl+k to jump between variables inside the snippet
 let g:UltiSnipsJumpForwardTrigger = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 
