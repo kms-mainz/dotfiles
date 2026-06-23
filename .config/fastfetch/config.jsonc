@@ -1,23 +1,26 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    // ----------------------- 
-    //          IMAGES 
+    // -----------------------
+    //          IMAGES
     // -----------------------
 
     // "source": "~/.config/fastfetch/images/131504870_p0.jpg",
-    // "source": "~/.config/fastfetch/images/133604892_p0.png",    
+    // "source": "~/.config/fastfetch/images/133604892_p0.png",
     // "source": "~/.config/fastfetch/images/jie.png",
     // "source": "~/.config/fastfetch/images/Konachan.com-2.jpg",
-    "source": "~/.config/fastfetch/images/Konachan.com.png",
+    // "source": "~/.config/fastfetch/images/Konachan.com.png",
     // "source": "~/.config/fastfetch/images/stalingrad.png",
     // "source": "~/.config/fastfetch/images/StG44.png",
     // "source": "~/.config/fastfetch/images/yande.re.png",
-    
-    // ---------------------- 
-    //          ASCII 
+    "source": "~/.config/fastfetch/images/__lexington.jpg",
+    // "source": "~/.config/fastfetch/images/_lexington.jpg",
+    // "source": "~/.config/fastfetch/images/yande.re(1).jpg",
+
     // ----------------------
-   
+    //          ASCII
+    // ----------------------
+
     // "source": "~/.config/fastfetch/ascii/ascii.txt", //HIDEN
     // "source": "~/.config/fastfetch/ascii/jie.txt",
     // "source": "~/.config/fastfetch/ascii/messer.txt",

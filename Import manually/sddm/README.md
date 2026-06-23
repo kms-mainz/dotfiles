@@ -1,0 +1,2 @@
+- The sddm config is based on `https://github.com/uiriansan/SilentSDDM`
+- Follow the step install in that repo
