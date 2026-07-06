@@ -5,26 +5,28 @@
 "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "
 "===============================
+
 "setup for vim fr fr
-set nocompatible            " disable compatibility to old-time vi
-set showmatch               " show matching 
-set ignorecase              " case insensitive 
-set mouse=v                 " middle-click paste with 
-set mouse=a                 " enable mouse click
-set hlsearch                " highlight search 
-set incsearch               " incremental search
-set tabstop=4               " number of columns occupied by a tab 
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
-set expandtab               " converts tabs to white space
-set shiftwidth=4            " width for autoindents
-set autoindent              " indent a new line the same amount as the line just typed
-set number                  " add line numbers
-set wildmode=longest,list   " get bash-like tab completions
-filetype plugin indent on   "allow auto-indenting depending on file type
-syntax on                   " syntax highlighting
-set clipboard=unnamedplus   " Use the system clipboard for all operations
-filetype plugin on
-set ttyfast                 " Speed up scrolling in Vim
+set nocompatible                " disable compatibility to old-time vi
+set showmatch                   " show matching 
+set ignorecase                  " case insensitive 
+set mouse=v                    " middle-click paste with 
+set mouse=a                     " enable mouse click
+set hlsearch                    " highlight search 
+set incsearch                   " incremental search
+set tabstop=4                   " number of columns occupied by a tab 
+set softtabstop=4               " see multiple spaces as tabstops so <BS> does the right thing
+set expandtab                   " converts tabs to white space
+set shiftwidth=4                " width for autoindents
+set autoindent                  " indent a new line the same amount as the line just typed
+set number                      " add line numbers
+set wildmode=longest,list       " get bash-like tab completions
+filetype plugin indent on       "allow auto-indenting depending on file type
+syntax on                       " syntax highlighting
+set clipboard=unnamedplus       " Use the system clipboard for all operations
+filetype plugin on              
+set ttyfast                     " Speed up scrolling in Vim
+
 " ==========================================
 " --- PLUGINS ---
 " ==========================================
@@ -32,16 +34,35 @@ set ttyfast                 " Speed up scrolling in Vim
 " Initialize vim-plug
 call plug#begin('~/.vim/plugged')
 
+" Syntax checker
 Plug 'dense-analysis/ale'
+
+" A file explorer (NERDTree)
 Plug 'preservim/nerdtree'
+
+" A status bar at the bottom
 Plug 'vim-airline/vim-airline'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+
+" Theme
+Plug 'joshdick/onedark.vim' 
+
+" Plugin for commenting (allows us to use Ctrl+/)
 Plug 'tpope/vim-commentary'
+
+" Snippet Engine (UltiSnips is the best for C++, Py, Bash, Qt)
 Plug 'SirVer/ultisnips'
+
+" The actual snippets library (supports basically every language)
 Plug 'honza/vim-snippets'
+
+" --> THE NEW ONES <--
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
+
+" Formatter
 Plug 'sbdchd/neoformat'
+
+" Visual Debugger (VSCode clone)
 Plug 'puremourning/vimspector'
 
 call plug#end()
@@ -54,18 +75,17 @@ if (has('termguicolors'))
     set termguicolors
 endif
 
-let g:material_theme_style = 'palenight'
-let g:material_terminal_italics = 0
-
-set background=dark
-colorscheme material
+colorscheme onedark
 
 " Press Ctrl+n to open the file explorer
 map <C-n> :NERDTreeToggle<CR>
+
 " --- Ctrl + ` : Open Terminal at the bottom ---
+" (Note: some terminals don't read the backtick well. If it fails, map it to <F4>)
 nnoremap <C-`> :bo term<CR>
 
 " --- Ctrl + / : Comment / Uncomment ---
+" Terminals read Ctrl+/ as Ctrl+_
 nnoremap <C-_> gc
 vnoremap <C-_> gc
 " --- Ctrl + A : Select All ---
@@ -90,6 +110,9 @@ nnoremap <C-y> <C-r>
 inoremap <C-y> <C-o><C-r>
 vnoremap <C-y> <C-c><C-r>
 
+
+" --- Alt + Up/Down : Move lines like VSCode ---
+
 " Normal mode (moves current line)
 nnoremap <A-Up> :m .-2<CR>==
 nnoremap <A-Down> :m .+1<CR>==
@@ -106,11 +129,17 @@ nnoremap <C-w> :tabclose<CR>
 " ==========================================
 " --- FORMATTER KEYBIND ---
 " ==========================================
+
+" Press F3 to auto-format the current file
 nnoremap <F3> :Neoformat<CR>
+
 " ==========================================
 " --- SNIPPET SETTINGS ---
 " ==========================================
+
+" Use Tab to expand a snippet (like VSCode)
 let g:UltiSnipsExpandTrigger = "<tab>"
+" Use Ctrl+j and Ctrl+k to jump between variables inside the snippet
 let g:UltiSnipsJumpForwardTrigger = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 
